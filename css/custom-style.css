@@ -1,0 +1,36 @@
+.portfolio1 {
+    /* display: block; */
+    /* vertical-align: top;  */
+
+    /* margin-top: 5px; */
+    /* min-height: 50vh !important;
+    height: 30vh !important;
+    width: 20vw; */
+    margin-right: 8px;
+    background-image: url('../images/portfolio1.jpg');
+    background-size: cover;
+    background-position: center, center;
+    padding-right: 175px;
+    display: table-cell;
+}
+
+.portfolio2 {
+    background-image: url('../images/portfolio2.jpg');
+    background-size: cover;
+    padding-right: 175px;
+    display: table-cell;
+}
+
+.portfolio3 {
+    background-image: url('../images/portfolio3.jpg');
+    background-size: cover;
+    padding-right: 175px;
+    display: table-cell;
+}
+
+.portfolio4 {
+    background-image: url('../images/portfolio4.jpg');
+    background-size: cover;
+    padding-right: 175px;
+    display: table-cell;
+}
