@@ -17,6 +17,16 @@
      <link rel="stylesheet" href="css/templatemo-style.css">
      <link rel="stylesheet" href="css/carousel-style.css">
      <link rel="stylesheet" href="css/custom-style.css">
+
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2G696QSBME"></script>
+     <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'G-2G696QSBME');
+     </script>
 </head>
 
 <body>
@@ -76,8 +86,8 @@
                                    pessoas."
                                    <h3>- Santiago Calatrava</h3>
                               </h1>
-                              <p></p>
-                              <a href="#contact" class="btn section-btn smoothScroll">Entre em contato</a>
+                              <br />
+                              <a href="#contact" class="btn section-btn smoothScroll mobile-click">Entre em contato</a>
                               <span>
                                    (45) 99802-2377
                                    <small>Para contatos profissionais</small>
@@ -283,7 +293,7 @@
      </section>
 
      <!-- CONTACT -->
-     <section id="contact" data-stellar-background-ratio="0.5">
+     <section id="contact" name="contact" data-stellar-background-ratio="0.5">
           <div class="container">
                <div class="row">
 
@@ -301,23 +311,22 @@
                               method="POST">
                               <div class="col-md-6 col-sm-6">
                                    <input type="text" class="form-control" placeholder="Nome Completo" id="nome"
-                                        name="nome" required="">
+                                        name="nome" required>
                               </div>
 
                               <div class="col-md-6 col-sm-6">
-                                   <input type="email" class="form-control" placeholder="Email" id="email" name="email"
-                                        required="">
+                                   <input type="tel" maxlength="16" class="form-control"
+                                        placeholder="Telefone de contato" id="telefone" name="telefone" required>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
-                                   <input type="tel" class="form-control" placeholder="Telefone de contato"
-                                        id="telefone" name="telefone" required="">
+                                   <input type="email" class="form-control" placeholder="Email" id="email" name="email"
+                                        required>
                               </div>
-
 
                               <div class="col-md-12 col-sm-12">
                                    <textarea class="form-control" rows="6" placeholder="Mensagem" id="mensagem"
-                                        name="mensagem" required=""></textarea>
+                                        name="mensagem" required></textarea>
                               </div>
 
                               <div class="col-md-4 col-sm-12">
@@ -381,17 +390,22 @@
                               </div>
                               <div class="col-md-6 col-sm-7">
                                    <div class="phone-contact">
-                                        <p>Desenvolvido por<span>Gabriel Cunha</span></p>
+                                        <p>Desenvolvido por
+                                             <a href="https://gabrielcunhadev.vercel.app/" target="_blank"
+                                                  rel="noreferrer">
+                                                  <span>Gabriel Cunha</span>
+                                             </a>
+                                        </p>
                                    </div>
                                    <ul class="social-icon">
-                                        <!-- <li><a href=" "
-                                             class="fa fa-whatsapp"></a></li> -->
-                                        <li><a href="https://www.linkedin.com/in/gabrielllcunha/"
-                                                  class="fa fa-linkedin"></a></li>
-                                        <li><a href="https://www.instagram.com/_gabrielcunha_/"
-                                                  class="fa fa-instagram"></a></li>
-                                        <li><a href="https://www.facebook.com/gabrielcunha0031/"
-                                                  class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=5545999061288&" target="_blank"
+                                                  rel="noreferrer" class="fa fa-whatsapp"></a></li>
+                                        <li><a href="https://www.linkedin.com/in/gabrielllcunha/" target="_blank"
+                                                  rel="noreferrer" class="fa fa-linkedin"></a></li>
+                                        <li><a href="https://www.instagram.com/_gabrielcunha_/" target="_blank"
+                                                  rel="noreferrer" class="fa fa-instagram"></a></li>
+                                        <li><a href="https://www.facebook.com/gabrielcunha0031/" target="_blank"
+                                                  rel="noreferrer" class="fa fa-facebook-square"></a></li>
                                    </ul>
                               </div>
                          </div>
@@ -407,7 +421,6 @@
      <script src="js/jquery.magnific-popup.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
-     <script src="js/gtag.js"></script>
 </body>
 
 </html>

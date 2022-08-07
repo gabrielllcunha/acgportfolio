@@ -195,7 +195,7 @@ section {
   animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+@-webkit-keyframes spinner {
   to {
     transform: rotate(360deg);
   }
@@ -379,6 +379,10 @@ section {
   display: block;
 }
 
+.home-info .mobile-click{
+  position: relative;
+  z-index: 9;
+}
 
 
 /*---------------------------------------
@@ -478,7 +482,13 @@ section {
   right: 0px;
   bottom: 0px;
   content: "";
-  background: #ce3232;
+  background: #272727;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #272727);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #272727);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
   opacity: 0;
   transition: 0.5s;
 }
@@ -551,8 +561,6 @@ section {
 
 .blog-thumb {
   background: #ffffff;
-  /* background-image: url('../images/portfolio1.jpg');
-  background-size: cover; */
   -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -763,6 +771,10 @@ footer span,
   color: #d9d9d9;
 }
 
+.footer-link li a:hover{
+  color: #ce3232;
+}
+
 .copyright-text p,
 .footer-bottom .phone-contact p {
   font-size: 14px;
@@ -794,6 +806,10 @@ footer span,
   margin-left: 10px;
 }
 
+.phone-contact a span:hover {
+  /* text-decoration: underline; */
+  color: #ce3232;
+}
 
 /*---------------------------------------
      SOCIAL ICON              
