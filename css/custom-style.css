@@ -1,11 +1,4 @@
 .portfolio1 {
-    /* display: block; */
-    /* vertical-align: top;  */
-
-    /* margin-top: 5px; */
-    /* min-height: 50vh !important;
-    height: 30vh !important;
-    width: 20vw; */
     margin-right: 8px;
     background-image: url('../images/portfolio1.jpg');
     background-size: cover;

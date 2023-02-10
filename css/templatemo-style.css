@@ -3,8 +3,52 @@
 body {
   background: #ffffff;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+  overflow: overlay !important;
 }
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #292929;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #4E4E4E;
+}
+
+::selection {
+  background-color: #777777;
+  color: #fff;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: #4E4E4E;
+  background-color: #292929;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  }
+
+  .professional-contact {
+    font-weight: 500;
+    color: #f9f9f9;
+  }
+
+  .professional-contact:hover {
+    color: #777777;
+  }
 
 
 /*---------------------------------------
@@ -86,7 +130,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ce3232;
+  color: #4E4E4E;
   outline: none;
 }
 
@@ -108,7 +152,7 @@ a:focus {
 }
 
 .section-btn {
-  background: #ce3232;
+  background: #4E4E4E;
   border: 0;
   border-radius: 100px;
   color: #ffffff;
@@ -122,22 +166,22 @@ a:focus {
 
 .section-btn:hover,
 .section-btn:focus {
-  background: #424242;
+  background: #4E4E4E;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #131313, #424242);
+  background: -webkit-linear-gradient(to right, #131313, #4E4E4E);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #131313, #424242);
+  background: linear-gradient(to right, #131313, #4E4E4E);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-color: transparent;
   color: #393939;
 }
 
 .overlay {
-  background: #424242;
+  background: #4E4E4E;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #131313, #424242);
+  background: -webkit-linear-gradient(to right, #131313, #4E4E4E);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #131313, #424242);
+  background: linear-gradient(to right, #131313, #4E4E4E);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 0.7;
   position: absolute;
@@ -271,7 +315,7 @@ section {
 
 .custom-navbar .nav li a:hover {
   background: transparent;
-  color: #ce3232;
+  color: #4E4E4E;
 }
 
 .custom-navbar .navbar-nav>li>a:hover,
@@ -281,7 +325,7 @@ section {
 
 .custom-navbar .nav li.active>a {
   background-color: transparent;
-  color: #ce3232;
+  color: #4E4E4E;
 }
 
 .custom-navbar .navbar-toggle {
@@ -362,7 +406,7 @@ section {
 
 .home-info .section-btn:hover,
 .home-info .section-btn:focus {
-  background: #ce3232;
+  background: #4E4E4E;
   border-color: transparent;
   color: #ffffff;
 }
@@ -404,6 +448,10 @@ section {
 
 .about-info {
   margin-top: 60px;
+}
+
+.about-image {
+  padding-bottom: 4rem;
 }
 
 .skill-thumb strong {
@@ -560,6 +608,7 @@ section {
 }
 
 .blog-thumb {
+  display: flex;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -575,7 +624,7 @@ section {
 }
 
 .blog-thumb small {
-  color: #ce3232;
+  color: #4E4E4E;
   font-weight: 500;
   display: block;
 }
@@ -610,11 +659,11 @@ section {
 }
 
 .blog-info .section-btn:hover {
-  background: #424242;
+  background: #4E4E4E;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000000, #424242);
+  background: -webkit-linear-gradient(to right, #000000, #4E4E4E);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000000, #424242);
+  background: linear-gradient(to right, #000000, #4E4E4E);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff;
 }
@@ -681,9 +730,9 @@ section {
 #contact {
   background: #000000;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000000, #424242);
+  background: -webkit-linear-gradient(to right, #000000, #4E4E4E);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000000, #424242);
+  background: linear-gradient(to right, #000000, #4E4E4E);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -726,7 +775,7 @@ section {
 }
 
 #contact input[type='submit'] {
-  background: #ce3232;
+  background: #4E4E4E;
   border-radius: 100px;
   color: #ffffff;
   font-weight: 500;
@@ -772,7 +821,7 @@ footer span,
 }
 
 .footer-link li a:hover{
-  color: #ce3232;
+  color: #4E4E4E;
 }
 
 .copyright-text p,
@@ -808,7 +857,7 @@ footer span,
 
 .phone-contact a span:hover {
   /* text-decoration: underline; */
-  color: #ce3232;
+  color: #4E4E4E;
 }
 
 /*---------------------------------------
@@ -836,7 +885,7 @@ footer span,
 }
 
 .social-icon li a:hover {
-  color: #ce3232;
+  color: #4E4E4E;
 }
 
 
@@ -921,7 +970,7 @@ footer span,
   color: #ffffff;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #ce3232;
+  border-bottom: 1px solid #4E4E4E;
 }
 
 .modal-dialog .tab-content {
@@ -943,7 +992,7 @@ footer span,
 }
 
 .modal-dialog form input[type="submit"] {
-  background: #ce3232;
+  background: #4E4E4E;
   border-color: transparent;
   border-radius: 100px;
   color: #ffffff;
