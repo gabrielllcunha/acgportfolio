@@ -1,0 +1,96 @@
+.main-wrapper {
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  background-image: url('/src/assets/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  background-color: rgba(240, 230, 231, 0.5);
+  z-index: 2;
+}
+
+.main-text {
+  z-index: 3;
+  user-select: none;
+  position: absolute;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 26px;
+  letter-spacing: 0.3em;
+}
+
+.bottom-bar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FEFCFF;
+  padding: 10px 30px;
+  letter-spacing: 0.3em;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  gap: 1rem;
+}
+
+.bottom-bar span {
+  color: black;
+}
+
+.site-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 14px;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .site-info {
+    justify-content: center;
+  }
+
+  .bottom-bar {
+    justify-content: center;
+    padding: 10px;
+  }
+}
