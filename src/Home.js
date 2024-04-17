@@ -18,7 +18,7 @@ function Home() {
         <div className="contact-info">
           <a href="https://wa.me/5545998022377" target="_blank" rel="noopener noreferrer">45 99802-2377</a>
           <div>
-            <a href="https://www.instagram.com/alancgomes">
+            <a href="https://www.instagram.com/alancarlosarq">
               <BiLogoInstagram size={30} />
             </a>
             <a href="https://www.facebook.com/alan.gomes.94695">
